@@ -1,4 +1,4 @@
-# operational-performance-infrastructure-monitoring-analysis
+# infrastructure-performance-monitoring-analysis
 
 
 **Excel** · **EDA**· **Power BI** · **DAX** · **Power Query** · **Data Modeling** · **Business Intelligence**
