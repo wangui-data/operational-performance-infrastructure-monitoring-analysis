@@ -25,7 +25,9 @@ How are the clients performing over time?
 * Which industries (e.g., Fintech, Healthcare, Media) make up the largest share of our customer base?
 * What percentage of our clients belong to the 'Enterprise' Company_Size?
 * Which Contract_Tier, Premium vs. Standard, is consuming the most compute power (Avg_CPU_Utilization_Pct)?
+* How does client contract tier (Contract_Tier) affect the average workload/CPU utilization placed on data center assets?
 * Which Industry generates the highest number of average System_Alerts per day?
+* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
 
 ---
 
@@ -47,9 +49,8 @@ How are the business operations performing over time?
 
 * Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
 * Who are the top 10 clients (Client_ID) generating the most system alerts (System_Alerts) across all their operational assets?
-* What are the maximum and minimum Thermal_Reading_C in the dataset? Are there any impossible temperatures (e.g., below 0°C or above 100°C) that indicate broken sensors?
-* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
 * What is the month-over-month trend for total power consumption across the entire data center?
+* What are the maximum and minimum Thermal_Reading_C in the dataset? Are there any impossible temperatures (e.g., below 0°C or above 100°C) that indicate broken sensors?
 
 ---
 
@@ -58,7 +59,6 @@ How are the business operations performing over time?
 * Are clients in the 'Nairobi East' region running their servers hotter (higher average Thermal_Reading_C) than clients in 'Mombasa'?
 * What is the total power consumption per HQ_Region (e.g., Nairobi East, Nairobi West, Kigali, Mombasa, Dar es Salaam)?
 * Which regional clients experience the highest average number of system alerts per telemetry log?
-* How does client contract tier (Contract_Tier) affect the average workload/CPU utilization placed on data center assets?
   
 ---
 
@@ -74,9 +74,15 @@ How are the business operations performing over time?
 
 ---
 
-
-
 # 🛠 Tools Used
+
+| Tool             | Purpose                                             |
+| ---------------- | --------------------------------------------------- |
+| **Excel**        |
+| **MySql**        |
+| **Power Bi**     | Data modeling, visualization, dashboard development |
+| **GitHub**       | Project documentation and portfolio presentation    |
+
 
 ---
 # 📂 Dataset Overview
