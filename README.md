@@ -24,22 +24,38 @@ The analysis focuses on five key business areas.
 ---
 
 
+
+# 🛠 Tools Used
+
+---
 # 📂 Dataset Overview
 
 The Maven Toys dataset contains multiple tables representing different aspects of the retailer's operations.
 
 The project uses five main tables:
 
-### `sales`
+### `Client`
 
-Contains individual retail sales transactions.
+The table tells you who the data center customer is.
 
-| Column       | Description                         |
-| ------------ | ----------------------------------- |
-| `Sale_ID`    | Unique sales transaction identifier |
-| `Date`       | Transaction date                    |
-| `Product_ID` | Product identifier                  |
-| `Store_ID`   | Store identifier                    |
-| `Units`      | Number of units sold                |
+| Column           | Description                         |
+| ---------------- | ----------------------------------- |
+| `Client_ID`      | Unique client                       |
+| `Company_Size`   | the size of the company             |
+| `Industry`       | Healthcare, fintech, media, etc.    |
+| `Contract_Tier`  | Store identifier                    |
+| `HQ_Region`      | Where the company is headquartered  |
 
 ---
+
+### `products`
+
+Contains information about products sold by Maven Toys.
+
+| Column             | Description               |
+| ------------------ | ------------------------- |
+| `Product_ID`       | Unique product identifier |
+| `Product_Name`     | Product name              |
+| `Product_Category` | Product category          |
+| `Product_Cost`     | Cost per unit             |
+| `Product_Price`    | Selling price per unit    |
