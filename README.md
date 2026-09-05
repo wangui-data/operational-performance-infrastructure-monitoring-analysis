@@ -62,7 +62,7 @@ This describes the physical/technical infrastructure.
 
 ---
 
-### `Asset`
+### `Infrastructure_Telemetry`
 
 It contains measurements over time. This is where you can actually **measure performance and operational behavior over time**.
 
