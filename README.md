@@ -87,9 +87,9 @@ How are the business operations performing over time?
 ---
 # 📂 Dataset Overview
 
-The Maven Toys dataset contains multiple tables representing different aspects of the retailer's operations.
+The Data Centre dataset contains multiple tables representing different aspects of the performance operations.
 
-The project uses five main tables:
+The project uses three main tables:
 
 ### `Client`
 
