@@ -24,8 +24,7 @@ How are the clients performing over time?
 
 * Which industries (e.g., Fintech, Healthcare, Media) make up the largest share of our customer base?
 * What percentage of our clients belong to the 'Enterprise' Company_Size?
-* What percentage of our total client base consists of Enterprise vs. Mid-Market vs. Startups?
-* Which Contract_Tier (Premium vs. Standard) is consuming the most compute power (Avg_CPU_Utilization_Pct)?
+* Which Contract_Tier, Premium vs. Standard, is consuming the most compute power (Avg_CPU_Utilization_Pct)?
 * Which Industry generates the highest number of average System_Alerts per day?
 
 ---
@@ -37,21 +36,19 @@ Are our assets being properly utilized?
 * Which asset models consume the most power?
 * How many total hardware assets are currently marked as 'Decommissioned' versus 'Online' in Dim_Asset?
 * Which specific server racks (Asset_ID) are pulling power that exceeds their rated Capacity_kW?
-* What is the total power consumed per asset compared to its total rated capacity (Capacity_kW)?
+* What is the total Power_Consumed_kWh broken down by Asset_Model? (Do newer models consume less power?)
 * Which Asset_Model runs at the highest average thermal reading (Thermal_Reading_C), and does it correlate with high CPU utilization?
   
 ---
 
 ### 3️⃣ Infrastructure Telemetry & Industry Analysis
 
-How are the business operations performing over time
+How are the business operations performing over time?
 
+* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
 * Who are the top 10 clients (Client_ID) generating the most system alerts (System_Alerts) across all their operational assets?
+* What are the maximum and minimum Thermal_Reading_C in the dataset? Are there any impossible temperatures (e.g., below 0°C or above 100°C) that indicate broken sensors?
 * Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
-* What is the maximum and minimum Thermal_Reading_C in the dataset? Are there any impossible temperatures (e.g., below 0°C or above 100°C) that indicate broken sensors?
-* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
-* What is the total Power_Consumed_kWh broken down by Asset_Model? (Do newer models consume less power?)
-* What is the average CPU utilization (Avg_CPU_Utilization_Pct) per Contract_Tier?
 * What is the month-over-month trend for total power consumption across the entire data center?
 
 ---
