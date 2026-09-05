@@ -64,13 +64,18 @@ This describes the physical/technical infrastructure.
 
 ### `Asset`
 
-This describes the physical/technical infrastructure.
+It contains measurements over time. This is where you can actually **measure performance and operational behavior over time**.
 
 | Column                  | Description               |
 | ----------------------- | ------------------------- |
-| `Asset_ID`              | Unique asset identifier   |
-| `Asset_Model`           | Type/model of asset       |
-| `Capacity_kW`           | How much power it is designed to handle        |
-| `Installation_Date`     | How old it is          |
-| `Operational_Status`    | is it operating    |
+| `Telemetry ID`              | Unique observation   |
+| `Date ID`           | When the measurement occurred      |
+| `Client_ID`           | Unique client identifier        |
+| `Asset_ID`     | Unique asset identifier          |
+| `Power_Consumed_kWh`    | Energy/power usage    |
+| `Avg_CPU_Utilization_Pct`     | How heavily the system is being used          |
+| `Thermal_Reading_C`    | Temperature   |
+| `Asset_ID`     | How old it is          |
+| `System_Alerts`    | Whether an issue/alert occurred    |
+
 
