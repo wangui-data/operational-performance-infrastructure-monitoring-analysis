@@ -13,29 +13,30 @@ A data-center operational performance and infrastructure monitoring dataset.
 
 # 🎯 Business Problem
 
-The Data Centre wants to understand **how efficiently and reliably is the data centers/assets operating, and which clients, assets, or conditions are driving high energy consumption, performance issues, or system alerts**
+The Data Centre wants to understand **how efficiently and reliably the data centers/assets are operating, and which clients, assets, or conditions are driving high energy consumption, performance issues, or system alerts**
 
 The analysis focuses on five key business areas.
 
 
 ### 1️⃣ Client Performance Analysis
 
-How is the business performing over time?
+How are the clients performing over time?
 
+* What percentage of our clients belong to the 'Enterprise' Company_Size?
 * Which industries (e.g., Fintech, Healthcare, Media) make up the largest share of our customer base?
 * What percentage of our total client base consists of Enterprise vs. Mid-Market vs. Startups?
-* What proportion of clients fall into Tier 1 (Premium) vs. Tier 3 (Dedicated)?
-* Which industry sector yields the highest power utilization efficiency?
-  
+* Which Contract_Tier (Premium vs. Standard) is consuming the most compute power (Avg_CPU_Utilization_Pct)?
+* Which Industry generates the highest number of average System_Alerts per day?
+
 ---
 
 ### 2️⃣ Asset Utilization & Operational Health
 
-How is the business performing over time?
+Are our assets being properly utilized?
 
 * Which asset models consume the most power?
-* Are older assets less efficient?
-* Are certain assets generating more alerts?
+* How many total hardware assets are currently marked as 'Decommissioned' versus 'Online' in Dim_Asset?
+* Which specific server racks (Asset_ID) are pulling power that exceeds their rated Capacity_kW?
 * What is the total power consumed per asset compared to its total rated capacity (Capacity_kW)?
 * Which Asset_Model runs at the highest average thermal reading (Thermal_Reading_C), and does it correlate with high CPU utilization?
   
@@ -43,18 +44,21 @@ How is the business performing over time?
 
 ### 3️⃣ Infrastructure Telemetry & Industry Analysis
 
-How is the business performing over time?
+How are the business operations performing over time
 
-* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
-* Which asset models consume the most power?
-* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
-* What is the average CPU utilization (Avg_CPU_Utilization_Pct) per Contract_Tier?
 * Who are the top 10 clients (Client_ID) generating the most system alerts (System_Alerts) across all their operational assets?
+* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
+* What is the maximum and minimum Thermal_Reading_C in the dataset? Are there any impossible temperatures (e.g., below 0°C or above 100°C) that indicate broken sensors?
+* Which Industry accounts for the highest total power consumption (Power_Consumed_kWh)?
+* What is the total Power_Consumed_kWh broken down by Asset_Model? (Do newer models consume less power?)
+* What is the average CPU utilization (Avg_CPU_Utilization_Pct) per Contract_Tier?
+* What is the month-over-month trend for total power consumption across the entire data center?
 
 ---
 
 ### 4️⃣ Regional & Portfolio Efficiency
 
+* Are clients in the 'Nairobi East' region running their servers hotter (higher average Thermal_Reading_C) than clients in 'Mombasa'?
 * What is the total power consumption per HQ_Region (e.g., Nairobi East, Nairobi West, Kigali, Mombasa, Dar es Salaam)?
 * Which regional clients experience the highest average number of system alerts per telemetry log?
 * How does client contract tier (Contract_Tier) affect the average workload/CPU utilization placed on data center assets?
@@ -63,12 +67,11 @@ How is the business performing over time?
 
 ### 5️⃣ Risk & Maintenance Monitoring
 
+* Can you list the Client_ID and Company_Size of any client whose average CPU utilization is above 85% and has generated more than 2 system alerts?
 * Which client-asset combinations are generating the highest total volume of System_Alerts?
-* Are older assets (based on Installation_Date) generating significantly more thermal warnings or system alerts than newer installations?
 * What percentage of total telemetry records register both high thermal readings (>30°C) and active system alerts (>0)?
 
-
-
+---
 
 # 🚀 Project Objectives
 
@@ -131,6 +134,51 @@ It contains measurements over time. This is where you can actually **measure per
 
 ---
 
+
 # 🧹 Data Preparation
 
+---
+
+# ❓ Key Business Questions
+
+## ⚡ Energy efficiency
+
+* What is the total power consumed?
+* Average power consumption
+* Power consumption by client
+* Power consumption by asset
+* Power consumption by asset model
+* Power consumption by region
+* Power consumption over time
+* Power consumption relative to asset capacity
+
+---
+
+## 🖥️ Infrastructure utilization
+
+* Which assets are operating near their capacity?
+* Are particular clients consistently consuming high capacity?
+* Which assets are severely underutilized?
+
+---
+
+## 🌡️ Performance and thermal conditions
+
+* Does higher CPU utilization lead to higher power consumption?
+* Does higher power consumption correspond with higher temperatures?
+* At what temperature do system alerts become more common?
+
+---
+
+## 🚨 System reliability/alerts
+
+* How many alerts occurred?
+* Which assets generated the most alerts?
+* Which clients experienced the most alerts?
+* Which asset models have the highest alert rate?
+* Are alerts associated with high temperatures?
+* Are alerts associated with high CPU utilization?
+* Are older assets generating more alerts?
+
+---
 
