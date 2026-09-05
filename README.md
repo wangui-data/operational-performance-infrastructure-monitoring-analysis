@@ -22,13 +22,13 @@ The analysis focuses on five key business areas.
 
 How is the business performing over time?
 
-* What is total revenue?
-* How many units are being sold?
-* How many sales transactions are occurring?
-* How are sales changing over time?
-* Which stores generate the most revenue?
-
+* Which industries (e.g., Fintech, Healthcare, Media) make up the largest share of our customer base?
+* What percentage of our total client base consists of Enterprise vs. Mid-Market vs. Startups?
+* What proportion of clients fall into Tier 1 (Premium) vs. Tier 3 (Dedicated)?
+* Which industry sector yields the highest power utilization efficiency?
+  
 ---
+
 ### 2️⃣ Asset Utilization & Operational Health
 
 How is the business performing over time?
@@ -38,7 +38,6 @@ How is the business performing over time?
 * Are certain assets generating more alerts?
 * What is the total power consumed per asset compared to its total rated capacity (Capacity_kW)?
 * Which Asset_Model runs at the highest average thermal reading (Thermal_Reading_C), and does it correlate with high CPU utilization?
-  
   
 ---
 
