@@ -55,10 +55,22 @@ This describes the physical/technical infrastructure.
 | Column                  | Description               |
 | ----------------------- | ------------------------- |
 | `Asset_ID`              | Unique asset identifier   |
-| `Asset_Model`           | Product name              |
-| `Capacity_kW`           | Product category          |
-| `Installation_Date`     | Cost per unit             |
-| `Operational_Status`    | Selling price per unit    |
+| `Asset_Model`           | Type/model of asset       |
+| `Capacity_kW`           | How much power it is designed to handle        |
+| `Installation_Date`     | How old it is          |
+| `Operational_Status`    | is it operating    |
 
+---
 
+### `Asset`
+
+This describes the physical/technical infrastructure.
+
+| Column                  | Description               |
+| ----------------------- | ------------------------- |
+| `Asset_ID`              | Unique asset identifier   |
+| `Asset_Model`           | Type/model of asset       |
+| `Capacity_kW`           | How much power it is designed to handle        |
+| `Installation_Date`     | How old it is          |
+| `Operational_Status`    | is it operating    |
 
