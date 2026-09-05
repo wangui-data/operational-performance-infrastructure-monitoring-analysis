@@ -22,8 +22,8 @@ The analysis focuses on five key business areas.
 
 How are the clients performing over time?
 
-* What percentage of our clients belong to the 'Enterprise' Company_Size?
 * Which industries (e.g., Fintech, Healthcare, Media) make up the largest share of our customer base?
+* What percentage of our clients belong to the 'Enterprise' Company_Size?
 * What percentage of our total client base consists of Enterprise vs. Mid-Market vs. Startups?
 * Which Contract_Tier (Premium vs. Standard) is consuming the most compute power (Avg_CPU_Utilization_Pct)?
 * Which Industry generates the highest number of average System_Alerts per day?
