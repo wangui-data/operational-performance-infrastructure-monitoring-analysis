@@ -185,3 +185,12 @@ It contains measurements over time. This is where you can actually **measure per
 
 ---
 
+
+---
+
+👤 Author
+
+Wangui Esther
+
+Data Analyst | Excel | MySQL | Power BI | Business Intelligence | Data Visualization
+
