@@ -40,22 +40,25 @@ The table tells you who the data center customer is.
 
 | Column           | Description                         |
 | ---------------- | ----------------------------------- |
-| `Client_ID`      | Unique client                       |
+| `Client_ID`      | unique client                       |
 | `Company_Size`   | the size of the company             |
-| `Industry`       | Healthcare, fintech, media, etc.    |
-| `Contract_Tier`  | Store identifier                    |
-| `HQ_Region`      | Where the company is headquartered  |
+| `Industry`       | healthcare, fintech, media, etc.    |
+| `Contract_Tier`  | contract identifier                 |
+| `HQ_Region`      | where the company is headquartered  |
 
 ---
 
-### `products`
+### `Asset`
 
-Contains information about products sold by Maven Toys.
+This describes the physical/technical infrastructure.
 
-| Column             | Description               |
-| ------------------ | ------------------------- |
-| `Product_ID`       | Unique product identifier |
-| `Product_Name`     | Product name              |
-| `Product_Category` | Product category          |
-| `Product_Cost`     | Cost per unit             |
-| `Product_Price`    | Selling price per unit    |
+| Column                  | Description               |
+| ----------------------- | ------------------------- |
+| `Asset_ID`              | Unique asset identifier   |
+| `Asset_Model`           | Product name              |
+| `Capacity_kW`           | Product category          |
+| `Installation_Date`     | Cost per unit             |
+| `Operational_Status`    | Selling price per unit    |
+
+
+
